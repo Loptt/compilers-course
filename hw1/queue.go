@@ -37,7 +37,7 @@ func (q *Queue) Front() int {
 
 // Push adds a new element to the tail
 func (q *Queue) Push(val int) {
-	newNode := new(Node)
+	newNode := &Node{val: val}
 	newNode.val = val
 
 	if q.head == nil {

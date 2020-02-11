@@ -35,8 +35,6 @@ func (s *Stack) Top() int {
 
 // Push adds an element to the top of the container
 func (s *Stack) Push(val int) {
-	newHead := new(Node)
-	newHead.val = val
-	newHead.next = s.head
+	newHead := &Node{val, s.head}
 	s.head = newHead
 }
