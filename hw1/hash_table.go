@@ -15,9 +15,13 @@ type HashTable struct {
 	array [SIZE]*TableEntry
 }
 
+func hash(key int) int {
+	return key % SIZE
+}
+
 // Insert adds an element to the table
 func (h *HashTable) Insert(key int, value string) {
-	index := key % SIZE
+	index := hash(key)
 
 	if h.array[index] != nil {
 		curr := h.array[index]
@@ -41,7 +45,7 @@ func (h *HashTable) Insert(key int, value string) {
 
 // Get retreives the value corresponding to the key
 func (h *HashTable) Get(key int) string {
-	index := key % SIZE
+	index := hash(key)
 
 	if h.array[index] != nil {
 		curr := h.array[index]
@@ -59,7 +63,7 @@ func (h *HashTable) Get(key int) string {
 
 // Remove deletes the TableEntry corresponding to the key
 func (h *HashTable) Remove(key int) {
-	index := key % SIZE
+	index := hash(key)
 
 	if h.array[index] != nil {
 		curr := h.array[index]
