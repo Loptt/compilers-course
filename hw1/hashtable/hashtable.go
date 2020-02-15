@@ -1,4 +1,4 @@
-package main
+package hashtable
 
 // TableEntry specifies a field in the hashtable
 type TableEntry struct {
