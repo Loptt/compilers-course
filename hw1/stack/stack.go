@@ -1,4 +1,4 @@
-package main
+package stack
 
 // Node is a data container
 type Node struct {

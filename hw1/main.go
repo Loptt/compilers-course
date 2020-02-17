@@ -1,31 +1,35 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"./hashtable"
+	"./queue"
+)
 
 func main() {
-	// Queue
-	/*
-		var q Queue
-		q.Push(1)
-		q.Push(3)
-		q.Push(2)
-		fmt.Println(q.Front())
-		q.Pop()
-		fmt.Println(q.Front())
-		q.Push(5)
-		fmt.Println(q.Front())
-		q.Pop()
-		fmt.Println(q.Front())
-		fmt.Println("All queue")
 
-		for !q.Empty() {
-			fmt.Println(q.Front())
-			q.Pop()
-		}
-	*/
+	
+	// Queue
+	var q queue.Queue
+	q.Push(1)
+	q.Push(3)
+	q.Push(2)
+	fmt.Println(q.Front())
+	q.Pop()
+	fmt.Println(q.Front())
+	q.Push(5)
+	fmt.Println(q.Front())
+	q.Pop()
+	fmt.Println(q.Front())
+	fmt.Println("All queue")
+
+	for !q.Empty() {
+		fmt.Println(q.Front())
+		q.Pop()
+	}
 
 	// HashTable
-	var ht HashTable
+	var ht hashtable.HashTable
 	ht.Insert(4, "Hola")
 	ht.Insert(14, "como")
 	ht.Insert(34, "estas")

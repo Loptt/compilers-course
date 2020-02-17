@@ -1,4 +1,4 @@
-package main
+package queue
 
 // Node is a data container
 type Node struct {
