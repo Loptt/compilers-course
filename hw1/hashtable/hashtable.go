@@ -2,8 +2,8 @@ package hashtable
 
 // TableEntry specifies a field in the hashtable
 type TableEntry struct {
-	key   int
-	value string
+	key   interface{}
+	value interface{}
 	next  *TableEntry
 }
 
@@ -16,7 +16,7 @@ type HashTable struct {
 }
 
 // Insert adds an element to the table
-func (h *HashTable) Insert(key int, value string) {
+func (h *HashTable) Insert(key interface{}, value interface{}) {
 	index := key % SIZE
 
 	if h.array[index] != nil {
@@ -40,7 +40,7 @@ func (h *HashTable) Insert(key int, value string) {
 }
 
 // Get retreives the value corresponding to the key
-func (h *HashTable) Get(key int) string {
+func (h *HashTable) Get(key interface{}) interface{} {
 	index := key % SIZE
 
 	if h.array[index] != nil {
@@ -58,7 +58,7 @@ func (h *HashTable) Get(key int) string {
 }
 
 // Remove deletes the TableEntry corresponding to the key
-func (h *HashTable) Remove(key int) {
+func (h *HashTable) Remove(key interface{}) {
 	index := key % SIZE
 
 	if h.array[index] != nil {
