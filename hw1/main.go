@@ -7,8 +7,6 @@ import (
 )
 
 func main() {
-
-	
 	// Queue
 	var q queue.Queue
 	q.Push(1)
