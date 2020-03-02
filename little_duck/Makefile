@@ -1,6 +1,8 @@
+duck: lex.yy.c duck.tab.c duck.tab.h
+	g++ duck.tab.c lex.yy.c -lfl -o duck
 
-ducklex: lex.yy.c
-	g++ lex.yy.c -o ducklex
+duck.tab.c duck.tab.h: duck.y
+	bison -d duck.y
 
-lex.yy.c: duck.l
+lex.yy.c: duck.l duck.tab.h
 	flex duck.l
