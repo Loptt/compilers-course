@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	parseError "mnt/b/Development/GitHub/compilers-course/little_duck/gocc/errors"
-	"mnt/b/Development/GitHub/compilers-course/little_duck/gocc/token"
+	//parseError "mnt/b/Development/GitHub/compilers-course/little_duck/gocc/errors"
+	//"mnt/b/Development/GitHub/compilers-course/little_duck/gocc/token"
 )
 
 const (
