@@ -57,7 +57,7 @@ extern int yydebug;
     DIV = 267,
     RELOP = 268,
     ID = 269,
-    INTEGER = 270,
+    INT = 270,
     FLOAT = 271,
     STRING = 272
   };

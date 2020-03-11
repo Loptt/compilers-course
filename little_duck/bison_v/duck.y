@@ -14,7 +14,7 @@
 %token DIV
 %token RELOP
 %token ID
-%token INTEGER
+%token INT
 %token FLOAT
 %token STRING
 
@@ -52,7 +52,7 @@ factor : '(' expresion ')'
        | varcte
 
 varcte : ID
-       | INTEGER
+       | INT
        | FLOAT
 
 condicion : IF '(' expresion ')' bloque ';'

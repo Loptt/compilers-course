@@ -113,7 +113,7 @@ extern int yydebug;
     DIV = 267,
     RELOP = 268,
     ID = 269,
-    INTEGER = 270,
+    INT = 270,
     FLOAT = 271,
     STRING = 272
   };
@@ -449,7 +449,7 @@ static const char *const yytname[] =
 {
   "$end", "error", "$undefined", "IF", "ELSE", "VAR", "INTTYPE",
   "FLOATTYPE", "PRINT", "PLUS", "MINUS", "MULT", "DIV", "RELOP", "ID",
-  "INTEGER", "FLOAT", "STRING", "':'", "'{'", "'}'", "'='", "';'", "'('",
+  "INT", "FLOAT", "STRING", "':'", "'{'", "'}'", "'='", "';'", "'('",
   "')'", "','", "$accept", "programa", "bloque", "estatutos", "estatuto",
   "asignacion", "expresion", "exp", "termino", "factor", "varcte",
   "condicion", "escritura", "escrituraarg", "vars", "varargs", "ids",
