@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"unicode/utf8"
 
-	"home/charles/Github/compilers-course/little_duck/gocc/token"
+	"mnt/b/Development/GitHub/compilers-course/little_duck/gocc/token"
 )
 
 const (

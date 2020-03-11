@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"home/charles/Github/compilers-course/little_duck/gocc/token"
+	"mnt/b/Development/GitHub/compilers-course/little_duck/gocc/token"
 )
 
 type ErrorSymbol interface {
